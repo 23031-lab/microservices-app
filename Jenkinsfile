@@ -2,14 +2,14 @@ pipeline {
     agent any
     
     environment {
-        DOCKER_HUB_USER = 'aliv3331'
+        DOCKER_HUB_USER = 'akiv3331'
         DOCKER_CREDENTIALS_ID = 'docker-hub-credentials'
     }
     
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/ВАШ_USER/microservices-app.git'
+                git branch: 'main', url: 'https://github.com/23031-lab/microservices-app.git'
             }
         }
         
